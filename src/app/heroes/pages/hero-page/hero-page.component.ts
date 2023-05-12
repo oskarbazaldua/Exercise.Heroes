@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { switchMap } from 'rxjs';
+import { delay, switchMap } from 'rxjs';
 
 import { HeroesService } from '../../services/heroes.service';
 import { Hero } from '../../interfaces/hero-interface';
@@ -24,14 +24,19 @@ export class HeroPageComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params
       .pipe(
+        delay(1100),
         switchMap( ({id}) => this.heroesService.getHeroById(id)),
       ).subscribe( hero => {
         if( !hero ) return this.router.navigate([ '/heroes/list' ]);
 
         this.hero = hero;
-        console.log({hero})
+        //console.log({hero})
         return;
       })
+  }
+
+  goBack():void{
+    this.router.navigateByUrl('heroes/list')
   }
 
 }
