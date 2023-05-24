@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -14,7 +14,15 @@
       "alter_ego": "Bruce Wayne",
       "first_appearance": "Detective Comics #27",
       "characters": "Bruce Wayne",
-      "alt_img": "https://pbs.twimg.com/media/FMuXETIXwAIPuB9.jpg:large"
+      "alt_img": null
+    },
+    {
+      "id": "dc-superman",
+      "superhero": "Superman",
+      "publisher": "DC Comics",
+      "alter_ego": "Kal-El",
+      "first_appearance": "Action Comics #1",
+      "characters": "Kal-El"
     },
     {
       "id": "dc-flash",
@@ -159,15 +167,6 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "BrACBsK",
-      "superhero": "Batman",
-      "publisher": "DC Comics",
-      "alter_ego": "Bruce Wayne",
-      "first_appearance": "Primer aparición Detective Comics #27",
-      "characters": "Bruce Wayne",
-      "alt_img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWENtFtGxnFyrQfLyP_HFDAkN6TUSgbmaLfDWbV6OhmwmdbpY6YKkeIJ_p_2F2w_jBX_vdyMcAmNKAHmyfPQc7eMYJ9_sPgnQHZKUs0qrwm6_XR35KPwyetNM4Sxsx4PZ120l601QEoYXCTheFX_TT1Ow35NPiW3Ab2IvGk-sEXDdCGwWuwdTzq0I/s1024/batman_ia.jpg"
     }
   ]
 }
